@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<style>
+    .bag-button {
+margin-top: 4%;
+        background-color: lightpink;
+        border: none;
+        padding: 10px 15px;
+        border-radius: 10px;
+        cursor: pointer;
+
+        text-transform: uppercase;
+
+    }
+
+
+    .wish-button {
+        cursor: pointer;
+        margin-top: 4%; 
+        border: none;
+        text-transform: uppercase;
+        padding: 10px 35px;
+        background-color: blueviolet;
+        border-radius: 10px;
+    }
+
+    h1 {
+        font-family: 'Times New Roman', Times, serif;
+
+    }
+    .add{
+        cursor: pointer;
+
+background-color: chocolate;
+margin-top: 4%; 
+        border: none;
+        text-transform: uppercase;
+        padding: 10px 35px;
+        /* background-color: blueviolet; */
+        border-radius: 10px;
+
+    }
+</style>
+
+<body>
+<br>
+    <button class="bag-button"
+        onclick=" cartQuantity = cartQuantity + 1 ; document.querySelector('#cart-summary').innerText = `Your cart has ${cartQuantity} items`;">add
+        to bag</button>
+
+<br>
+
+    <!-- cartQuantity++; document.querySelector('#cart-summary').innerText = 'your bag has'${cart-Quantity}items;"> -->
+    <button class="wish-button" onclick=" wishQuantity = wishQuantity + 1 ;  document.querySelector('#wish-summary').innerText = `Your wishlist has ${wishQuantity} items`;
+   ">
+        Move to wishlist
+    </button>
+    <br>
+
+    <button class="add"
+        onclick="addon = addon + 2; document.querySelector('#add-summary').innerText = `Your Addon has ${addon} items`; ">add
+        1+1 on item</button>
+
+
+
+    <!-- <h1 "></h1> -->
+    <h1 id="cart-summary"></h1><br>
+    <h1 id="wish-summary"></h1><br>
+    <h1 id="add-summary"></h1><br>
+
+
+    <script>
+
+        let cartQuantity = 0;
+        document.querySelector('#cart-summary').innerText = `Your cart has ${cartQuantity} items`;
+
+        let wishQuantity = 0;
+        document.querySelector('#wish-summary').innerText = `Your wishlist has ${wishQuantity} items`;
+
+        let addon = 0;
+        document.querySelector('#add-summary').innerText = `Your Addon has ${addon} items`;
+
+    </script>
+</body>
+
+</html>

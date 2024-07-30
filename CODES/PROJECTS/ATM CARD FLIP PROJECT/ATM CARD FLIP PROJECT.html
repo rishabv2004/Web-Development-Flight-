@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="project 1.css">
+    <title>Flipping card design by Rishab</title>
+</head>
+<!-- <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        font-family: "Poppins", sans-serif;
+    }
+
+    section {
+        position: relative;
+        min-height: 100vh;
+        width: 100%;
+        background: #000000;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #f3f5f5;
+        perspective: 1000px;
+    }
+
+    section::before {
+        content: "";
+        position: absolute;
+        height: 240px;
+        width: 240px;
+        background: linear-gradient(90deg, #ff8c08, #f3f5f5);
+        transform: translate(-150px, -100px);
+        border-radius: 50%;
+
+    }
+
+    section::after {
+        content: "";
+        position: absolute;
+        height: 240px;
+        width: 240px;
+        transform: translate(150px, 100px);
+        background: linear-gradient(90deg, #077c2a, #f3f5f5);
+        border-radius: 50%;
+
+    }
+
+    .container {
+        position: relative;
+        height: 275px;
+        width: 400px;
+        z-index: 100;
+        transition: 1.4s;
+        transform-style: preserve-3d;
+
+    }
+
+    .container .card {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        padding: 25px;
+        background: rgba(255, 255, 255, 0.1);
+        border-radius: 25px;
+        backdrop-filter: blur(25px);
+        box-shadow: 0 25px 45px rgba(0, 0, 0, 0.25);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        backface-visibility: hidden;
+    }
+
+    .container:hover {
+
+        transform: rotateY(180deg);
+    }
+
+    .front-face header,
+    .front-face .logo {
+        display: flex;
+        align-items: center;
+        margin-right: 10px;
+
+    }
+
+    .front-face header {
+        justify-content: space-between;
+    }
+
+    h5 {
+        font-size: 16px;
+        font-weight: 400;
+
+    }
+
+    .front-face .card-details {
+        display: flex;
+        margin-top: 40px;
+        align-items: flex-end;
+        justify-content: space-between;
+    }
+
+    h6 {
+        font-size: 10px;
+        font-weight: 400;
+    }
+
+    h5.number {
+        font-size: 18px;
+        letter-spacing: 1px;
+    }
+
+    h5.name {
+        margin-top: 40px;
+    }
+
+    .valid-date {
+        margin-top: 20px;
+    }
+
+    .card.back-face {
+        padding: 15px 25px 25px 25px;
+        border: none;
+        transform: rotateY(180deg);
+    }
+
+    .card.back-face h6 {
+        font-size: 8px;
+
+    }
+
+    .card.back-face .magnetic-strip {
+        position: absolute;
+        height: 45px;
+        width: 100%;
+        background: #000;
+        top: 40px;
+        left: 0;
+    }
+
+    .card.back-face .signature {
+        margin-top: 80px;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        height: 40px;
+        border-radius: 6px;
+        width: 85%;
+        background: repeating-linear-gradient(#f3f5f5, #fff 3px, #efefef 0px, #efefef 9px);
+    }
+
+    .signature i {
+        font-size: 12px;
+        margin-right: -30px;
+        background-color: #f3f5f5;
+        padding: 4px 6px;
+        border-radius: 4px;
+        color: #000;
+        z-index: -1;
+    }
+
+    .card.back-face h5 {
+        margin-top: 15px;
+        font-size: 10px;
+    }
+</style> -->
+
+<body>
+    <section>
+        <div class="container">
+            <div class="card front-face">
+                <header>
+
+                    <span class="logo">
+                        <!-- <img src="D:\WEB DEVELOPMENT EXPRESS (PROJECTS & CODES)\CODES\images\ms card logo.png" alt="" srcset=""> -->
+                        <img src="https://brand.mastercard.com/content/dam/mccom/brandcenter/thumbnails/mc_dla_symbol_92.png"
+                            width="50px" alt="">
+                        <h5>Master Card</h5>
+                    </span>
+                    <img src="data:image/png;base64,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"
+                        width="50px" alt="">
+
+                </header>
+                <div class="card-details">
+                    <div class="name-number">
+                        <h6>Card Number </h6>
+                        <h5 class="number">4322 2345 7654 8764</h5>
+                        <h5 class="name">Rishab Verma</h5>
+
+                    </div>
+                    <div class="valid-date">
+                        <h6>Valid Thru </h6>
+                        <h5>10/28</h5>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="card back-face">
+                <h6>For customer service call +91 7599775604 or email at rishab.verma@developer.com</h6>
+                <span class="magnetic-strip"> </span>
+                <div class="signature"><i>308</i></div>
+                <h5>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nulla natus sequi, corrupti officiis dicta
+                    ullam saepe alias similique asperiores reprehenderit fugiat dolorem rerum nemo odit officia labore
+                    veniam? Ex nam consectetur similique reiciendis eius atque quae autem repellendus consequuntur
+                    exercitationem.</h5>
+
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>

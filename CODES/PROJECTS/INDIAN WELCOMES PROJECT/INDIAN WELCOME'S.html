@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>java script dom & bom</title>
+</head>
+<style>
+
+    body {
+     margin: 10px;
+     padding: 0px;   
+     height: 500px;
+      background:url("https://www.animaker.com/blog/wp-content/uploads/2017/07/ezgif-1-fd52f7151c.gif");
+      background-repeat: no-repeat;
+background-size: cover;
+backface-visibility: inherit;
+
+    }
+
+    .box {
+        height: 100px;
+        width: 150px;
+        padding: 20px;
+        margin: 30px;
+        border: 1px solid black;
+        border-radius: 60px;
+        align-items: center;
+        justify-items: center;
+
+
+
+    }
+
+    .box img {
+        width: 100px;
+        align-items: center;
+    }
+
+      
+      
+</style>
+
+<body>
+
+    <div class="container" align="center">
+        <div class="box"></div>
+        <div class="box"><img
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/Ashoka_Chakra.svg/200px-Ashoka_Chakra.svg.png"
+                alt=""></div>
+        <div class="box"></div>
+
+    </div>
+    <script>
+        console.log("hello")
+
+let boxes = document.getElementsByClassName("box")
+
+console.log(boxes)
+    
+boxes[2].style.backgroundColor = "GREEN"
+boxes[0].style.backgroundColor =" orange"
+boxes[1].style.backgroundColor =" white"
+
+
+
+
+
+    </script>
+
+
+
+</body>
+
+</html>

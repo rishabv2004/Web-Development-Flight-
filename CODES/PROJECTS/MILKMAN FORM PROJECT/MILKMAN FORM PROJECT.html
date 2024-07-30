@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dairy Milk Order Booking</title>
+    <link rel="stylesheet" href="milkman css.css">
+</head>
+
+<body>
+    <style>
+        body,
+        html {
+            height: 100%;
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background: url("https://i.pinimg.com/originals/1a/29/6f/1a296f6f7d1efa98087e2172d5e0b617.gif") no-repeat center center fixed;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .container {
+
+            display: flex;
+            justify-content: left;
+            align-items: left;
+            height: 100%;
+            margin: 0px;
+        }
+
+        .order-form {
+            /* background-color: rgba(255, 255, 255, 0.8); */
+            padding: 20px;
+            border-radius: 1px;
+            box-shadow: 0 0 10px rgba(124, 105, 105, 0.5);
+            width: 350px;
+        }
+
+        .order-form h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .order-form label {
+
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        .order-form input {
+            width: 90%;
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+
+        }
+
+        .order-form button {
+            width: 96%;
+            padding: 10px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            border-radius: 15px;
+            cursor: pointer;
+        }
+
+        .order-form button:hover {
+            background-color: #218838;
+
+
+        }
+
+        .name {
+            color: red;
+            text-decoration: bold;
+        }
+
+        .author {
+            text-align: center;
+
+            margin: 3px;
+            font-family: sans-serif;
+            padding: 3px;
+            /* width: 40px;
+height: 30px ; */
+            border: 3px solid black;
+            border-radius: 10px;
+
+        }
+        audio{
+            border: 3px solid rgb(255, 153, 0);
+            color: #218838;
+            background-color: #218838;
+        }
+
+        audio.controls{
+            color: #218838;
+            background-color: #218838;
+        }
+    </style>
+
+
+
+<audio controls autoplay preload="none">
+    <source src="https://nzt6ku-a.akamaihd.net/downloads/ringtones/files/mp3/vande-mataram-ringtone-high-quality-39900.mp3"type="audio/ogg">
+    <source src="https://nzt6ku-a.akamaihd.net/downloads/ringtones/files/mp3/vande-mataram-ringtone-high-quality-39900.mp3"type="audio/mpeg">
+
+    Your browser does not support the audio element.
+</audio>
+    <div class="container">
+        <form class="order-form">
+            <h1>Order Dairy Milk</h1>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="address">Address:</label>
+            <input type="text" id="address" name="address" required>
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" required>
+
+            <label for="quantity">Quantity (liters):</label>
+            <input type="number" id="quantity" name="quantity" min="1" required>
+
+            <label for="date">Delivery Date:</label>
+            <input type="date" id="date" name="date" required>
+
+            <br><br><button type="submit"><a
+                    href="https://media4.giphy.com/media/9SIY0ixEIZkgzTKQu5/giphy.gif?cid=6c09b952mkr70oobfc2tnyrtj6kk8ucl4z6fwhrgtno9kfe7&ep=v1_gifs_search&rid=giphy.gif&ct=g">
+                    Place
+                    Order</a></button>
+            <br><br><br> <br>
+            <br><br>
+            <div class="author"> DEVELOPER : This Webpage Developed & Designed By <div class="name"> "RISHAB_VERMA" </b>
+                </div>
+            </div>
+
+
+        </form>
+
+    </div>
+</body>
+
+</html>

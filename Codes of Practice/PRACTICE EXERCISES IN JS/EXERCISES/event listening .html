@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .container {
+        text-align: center;
+        position: relative;
+        margin: 40px;
+        color: white;
+        font-family: cursive;
+    }
+
+    body {
+        background-color: black;
+        background-image: url("https://giffiles.alphacoders.com/398/39827.gif");
+    }
+
+    .dibba {
+        border: 10px solid black;
+        background-color: black;
+        border-radius: 50px;
+        width: 230px;
+    }
+    audio{
+        
+    
+    
+    
+    }
+</style>
+
+<body>
+    <div class="container" align="">
+        <div class="audio" align="left"><audio controls>
+            <source src="https://dl.prokerala.com/downloads/ringtones/files/mp3/panchayat-title-anurag-saikia-60314.mp3" type="audio/mp.3">
+            <source src="https://dl.prokerala.com/downloads/ringtones/files/mp3/panchayat-title-anurag-saikia-60314.mp3" type="audio/ogg">
+        </audio></div> 
+        <br>
+        <div class="dibba">
+
+            <div class="box">HEY! MY NAME IS :- </div>
+            <br>
+            <button id="btn"> Click for check</button>
+            <br><br>
+
+            <div class="box1">HEY! MY NAME IS :- </div>
+            <br>
+            <button id="btn1"> Double Click for check</button>
+
+            <br><br>
+            <div class="box2">HEY! MY NAME IS :- </div>
+            <br>
+            <button id="btn2"> Leave Cursor for check</button>
+            <br><br>
+            <div class="box3">HEY! MY NAME IS :- </div>
+            <br>
+            <button id="btn3"> Put Cursor for check</button>
+
+            <br><br>
+        </div>
+        <script>
+            let button = document.getElementById("btn")
+button.addEventListener("click", () => {
+
+    document.querySelector(".box").innerHTML =
+        "Your Name is<b> Rishab Verma! </b> <br> <br>Thanking You 🙏🏼"
+
+
+
+
+})
+
+
+
+let b1 = document.getElementById("btn1")
+b1.addEventListener("dblclick", () => {
+
+    document.querySelector(".box1").innerHTML =
+        "Your Name is<b> Rishab Verma! </b> <br> <br>Thanking You 🙏🏼"
+    })
+
+
+    let binod = document.getElementById("btn2")
+binod.addEventListener("mouseleave", () => {
+
+    document.querySelector(".box2").innerHTML =
+        "Your Name is<b> Rishab Verma! </b> <br> <br>Thanking You 🙏🏼"
+    })
+
+
+    let verma = document.getElementById("btn3")
+verma.addEventListener("mouseover", () => {
+
+    document.querySelector(".box3").innerHTML =
+        "Your Name is<b> Rishab Verma! </b> <br> <br>Thanking You 🙏🏼"
+    })
+        </script>
+        <script src="java.js"></script>
+      
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CLOCK- DATE & TIME</title>
+</head>
+<style>
+body{
+    background-color: black;
+}
+.clock
+
+
+{text-decoration: bold;
+ /* text-decoration-color: aqua; */
+    font-size: large;
+    border: 2px solid rgb(0, 0, 0);
+    background: rgb(5,4,4);
+    background: radial-gradient(circle, rgb(212, 128, 2) 0%, rgb(0, 0, 0) 100%);
+    border-radius: 300px;
+   color: rgb(255, 255, 255);
+    margin: 40px;
+    padding: 30px;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    animation: animate  
+                10s linear infinite; 
+        } 
+        @keyframes animate { 
+            0% { 
+                opacity: 0; 
+            } 
+  
+            40% { 
+                opacity: 3.9; 
+            } 
+  
+        100% { 
+                opacity: 0; 
+            } 
+
+
+            
+        } 
+        .claim{
+ color: rgb(48, 56, 56);
+ text-align: center;
+ font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;           
+        @keyframes mymove {
+  from {top: 10px;}
+  to {top: 200px;}
+}
+
+}
+    .date{
+        font-size: large;
+    border: 2px solid rgb(0, 0, 0);
+    background: rgb(5,4,4);
+    background: radial-gradient(circle, rgb(8, 160, 46) 0%, rgb(0, 0, 0) 100%);
+    border-radius: 300px;
+   color: rgb(255, 255, 255);
+    margin: 40px;
+    padding: 30px;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    animation: animate  
+                10s linear infinite; 
+        } 
+        @keyframes animate { 
+            0% { 
+                opacity: 0; 
+            } 
+  
+            40% { 
+                opacity: 3.9; 
+            } 
+  
+        100% { 
+                opacity: 0; 
+            } 
+
+
+            
+        } 
+    
+</style>
+<body>
+   <div class="clock">
+  <p>Current Time is :- </p>  <p id="demo"></p>
+
+  <b>  <button onclick="myStopFunction()">Stop time</button></b>
+</div>
+<div class="claim">
+    <h3>
+        <blink>    
+            This clock developed & designed by @rishab_verma 
+        </blink> 
+    </h3>
+</div>
+
+<div class="date">
+<p>Today's Date is ("month/day/year"):- <br><br><span id="din"</span></p>
+    <b>  <button onclick="myStopFunction()">Thankyou</button></b>
+</div>
+
+   
+<script>
+
+const myInterval = setInterval(myTimer, 1000);
+
+    function myTimer() {
+      const date = new Date();
+      document.getElementById("demo").innerHTML = date.toLocaleTimeString();
+
+
+        // if date.toLocaleTimeString(12pm>=){
+        //     alert('HELLO GOOD AFTERNOON');
+        // }  
+    }
+    
+    
+    
+    function myStopFunction() {
+      clearInterval(myInterval);
+    }
+    
+    // here new coliumn
+    const myIn = setInterval(myd, 1000);
+    
+    function myd() {
+      const date = new Date();
+      document.getElementById("din").innerHTML = date.toLocaleDateString();
+    }
+    
+    
+    
+    // function myStopFunction() {
+    //   clearInterval(myIn);
+ 
+ alert("HELLO! USER ")
+ </script><!-- <script src="js.js"></script> -->
+</body>
+
+</html>

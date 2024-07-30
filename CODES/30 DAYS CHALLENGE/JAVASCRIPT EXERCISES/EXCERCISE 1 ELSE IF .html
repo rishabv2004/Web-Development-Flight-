@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+// intializing start
+let age = 10;
+let gender = 'female'; //male or female you can choose
+let finalDiscount;
+
+// condition start of if else
+
+if (age <= 5)
+{
+    finalDiscount = 100;
+
+}
+else if (age <=8){
+
+    finalDiscount = 50;
+}
+else if (age >= 65)
+{
+    finalDiscount = 30;
+
+}
+
+else if (gender === 'female')
+{
+    finalDiscount = 50;
+    
+}
+else{
+
+    finalDiscount = 0;
+}
+
+
+console.log(`Your final discount is ${finalDiscount}`)
+    </script>
+    
+</body>
+</html>

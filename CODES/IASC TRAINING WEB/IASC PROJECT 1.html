@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IASC PROJECT 1</title>
+    <link rel="stylesheet" href="style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@400..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@400..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Schibsted+Grotesk:ital,wght@0,400..900;1,400..900&display=swap"
+        rel="stylesheet">
+</head>
+<style>
+    *{
+    margin: 0;
+ padding: 0;
+}
+body{
+    display: contents;
+    background-color: black;
+
+
+    /* background: no-repeat; */
+    width: 100vmax;
+    
+
+}
+#navbar{
+  display: flex;
+  align-items: center;
+}
+#logo{
+  margin: 10px 34px;
+}
+#logo img{
+    height: 60px;
+    margin: 3px 6px;
+}
+#navbar{
+    position: relative;
+}
+ #navbar ul{
+    display: flex;
+}
+#navbar::before{
+  content: "";
+  background-color: #ffffff;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  opacity: 1;
+}
+#navbar ul li{
+  
+    list-style: none;
+    font-size: 1.3rem;
+}
+#navbar ul li a{
+    cursor: pointer;
+   font-style: bold;
+    color: rgb(0, 0, 0);
+    display: block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+   
+}
+#navbar ul li a:hover{
+ 
+   color: rgb(0, 156, 184);
+   background-color: rgb(255, 255, 255);
+ }
+ #home{
+  
+    height: 550px;
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    justify-content: center;
+    align-items: center;
+ }
+ #home::before{ 
+
+    content: "";
+ background: url("https://resize.indiatvnews.com/en/resize/newbucket/1200_-/2022/09/mod-quotes-1663395916.jpg") no-repeat center center/cover;
+    position: absolute;
+    height: 85%;
+    width: 100%;
+    z-index: 1;
+    opacity: 1;
+
+ }
+ #home h1{
+    color: rgb(0, 98, 128);
+    text-align: center;
+    font-family: "Baloo Bhai 2", sans-serif;
+ }
+ #home p{
+    color: rgb(0, 0, 0);
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: "Schibsted Grotesk", sans-serif;
+ }
+ 
+ 
+#services{
+margin: 34px;
+
+display: flex;
+}
+.h-primary{
+    font-size: 3.1rem;
+    padding: 13px;
+    font-family: cursive;
+}
+.center{
+text-align: center;
+
+}
+
+/* #services{
+    padding: 30px;
+} */
+.text1{
+    font-size: 2.9 rem;
+    padding: 1px;
+    text-align: center;
+
+}
+
+#services .box1{
+    border: 3px solid rgb(0, 0, 0);
+    border-radius: 50px;
+    margin: 1px 6px;
+padding: auto;
+     width: 400px;
+    height: 400px; 
+    text-align: center;
+    
+}
+#services .box1 img{
+   height: 200px;display: block;
+   margin: 3px 6px;
+   padding: 30px;
+
+}
+
+.text2{
+    font-size: 2.9 rem;
+    padding: 1px;
+    text-align: center;
+
+}
+
+#services .box2{
+    border: 3px solid rgb(0, 0, 0);
+    border-radius: 50px;
+    width: 400px;
+    height: 400px;
+    text-align: center;
+    margin: 1px 6px;
+    padding: auto;
+    
+}
+#services .box2 img{
+   height: 200px;display: block;
+   margin: 3px 6px;
+   padding: 30px;
+
+}
+
+.text3{
+    font-size: 2.9 rem;
+    padding: 1px;
+    text-align: center;
+
+}
+
+#services .box3{
+    border: 3px solid rgb(0, 0, 0);
+    border-radius: 50px;
+    width: 400px;
+    height: 400px;
+    text-align: center;
+    margin: 1px 6px;
+    padding: auto;
+    
+}
+#services .box3 img{
+   height: 200px;
+   width: 250px;
+   display: block;
+   margin: 3px 6px;
+   padding: 30px;
+
+}
+.claim
+{
+    border: 2px solid black;
+    border-radius: 5px;
+    font-size: 25px;
+    margin: 20px;
+    padding: 20px;
+}
+</style>
+<body>
+    <nav id="navbar">
+        <div id="logo">
+
+            <img src="https://iascsectorskillcouncil.in/wp-content/uploads/2021/11/Asset-2-4.png" alt="iasc.in">
+        </div>
+        <ul>
+            <li class="item"><a href="#">Home</a></li>
+            <li class="item"><a href="#">Services</a></li>
+            <li class="item"><a href="#">Carreer</a></li>
+            <li class="item"><a href="#">About Us</a></li>
+            <li class="item"><a href="#">Contact Us</a></li>
+
+
+        </ul>
+
+
+    </nav>
+    <section id="home">
+        <h1 class="modi"></h1>
+    </section>
+
+    <section class="services-container">
+        <h1 class="h-primary center"><u>Our Services</u> </h1>
+
+        <div id="services">
+            <div class="box1">
+                <img src="https://cdn.pixabay.com/photo/2019/06/17/07/33/school-4279290_1280.jpg"
+                    alt="skills & trainning">
+
+                <h2 class="text1"> Skills & Training</h2><br>
+
+                <p class="center"> <b> Skilling ,Reskilling and Up-skilling in the field of Instrumentation , Automation
+                        , surveillance
+                        and communication to create a talent pool which is employable and aligned to the Industry need .
+                    </b> </p>
+
+
+            </div>
+
+            <div class="box2">
+                <img src="https://assets.entrepreneur.com/content/3x2/2000/1638079565-Untitleddesign-2021-11-28T100532825.png?format=pjeg&auto=webp&crop=4:3"
+                    alt="skills & trainning">
+
+                <h2 class="text2">Effective Communication</h2><br>
+
+                <p class="center"> <b> Effective communication in business fosters collaboration, enhances
+                        decision-making, builds relationships, and drives success by ensuring clarity, reducing
+                        misunderstandings, and aligning team goals. </b> </p>
+
+
+            </div>
+
+
+            <div class="box3">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQczwVoakOemZSMD84IOVqnM3eJIK6lsm_OhbhKMLG2nAu_ynt_8u8aJ8LGb8NW-5NLce4&usqp=CAU"
+                    alt="skills & trainning">
+
+                <h2 class="text3">Ready For Jobs</h2><br>
+
+                <p class="center"> <b> Get ready for jobs by honing relevant skills, crafting a strong resume,
+                       <br> networking, practicing interviews, staying updated on industry trends, and showcasing
+                        adaptability.. </b> </p>
+
+
+            </div>
+
+
+
+
+
+
+        </div>
+
+
+
+
+
+    </section>
+    <div class="claim">
+       <h6>NOTE :- THIS WEBPAGE DEVELOPED & DESIGNED BY RISHAB VERMA</h6></div>
+</body>
+
+</html>

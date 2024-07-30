@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&display=swap');
+     
+        body {
+            background: url("https://cdn.dribbble.com/users/1951957/screenshots/5580138/day-night.gif"  );
+          
+            background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+        }
+       h1{
+         color: white; 
+         font-family: cursive;
+        }
+
+     
+    </style>
+
+    <h1 id="morning" align=" center"></h1>
+    <h1 id="noon" align=" center"></h1>
+    <h1 id="night" align=" center"></h1>
+
+    <script>
+
+        let date = new Date();
+        let hours = date.getHours();
+        let subhe = document.querySelector('#morning');
+        let dupher = document.querySelector('#noon');
+        let raat = document.querySelector('#night');
+
+
+        if (hours > 5 && hours < 12) {
+            subhe.innerText = 'Good Morning Champion! 🌅'
+
+        }
+
+        else if (hours > 12 && hours < 18   ) {
+            dupher.innerText = 'Good Afternoon Buddy! 🌞'
+
+        }
+
+        else {
+            raat.innerText = 'Good Night Sweetheart! 🌛'
+
+        }
+
+           </script>
+
+
+
+
+
+</body>
+
+</html>
